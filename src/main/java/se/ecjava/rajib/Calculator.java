@@ -32,7 +32,11 @@ public class Calculator {
                 default:
                     System.out.println("Unrecognized math operator!");
             }
-            keepAlive = false;
+            System.out.println("If you want to continue press 1 otherwise press 0");
+            int calculatorRunner = Integer.parseInt(scanner.nextLine());
+            if (calculatorRunner == 0) {
+                keepAlive = false;
+            }
         }
     }
 
